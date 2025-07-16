@@ -1,0 +1,9 @@
+<h2>Lista de Livros</h2>
+
+<ul>
+    {% for livro in livros %}
+        <li>{{ livro }}</li>
+        {% empty %}
+        <li>Não há livros cadastrados.</li>
+    {% endfor %}
+</ul>
